@@ -49,15 +49,15 @@ def formula(x, y):
 def main():
     if len(sys.argv) == 1:
         global y_0, x_0, form_y, form_x, a, b, d, N, y_n, pattern_x, pattern_y, graph, n
-        global x_0
-        x_0, y_0 = -2, 2 #наша ооблась определения
-    
+
 
         form_x = str(num1.get())
         form_y = str(num2.get())
         d = float(numyint.get())
         a = float(numya.get())
         b = float(numyb.get())
+        x_0 = float(numx.get())
+        y_0 = float(numy.get())
 
         N = int(4 / d)
 
