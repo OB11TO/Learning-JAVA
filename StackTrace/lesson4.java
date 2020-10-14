@@ -1,4 +1,4 @@
-package com.javarush.task.task09.task0906;
+
 
 /*
 Логирование стек трейса
@@ -7,7 +7,7 @@ package com.javarush.task.task09.task0906;
 Имя класса, имя метода и сообщение разделить двоеточием с пробелом.
 */
 
-public class Solution {
+class Solution1 {
     public static void main(String[] args) {
         log("In main method");
     }
