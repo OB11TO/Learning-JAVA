@@ -10,6 +10,7 @@ Set из растений
 public class Solution {
     public static void main(String[] args) {
 
+
         Set<String> set = new HashSet<>();
         set.add("арбуз");
         set.add("банан");
