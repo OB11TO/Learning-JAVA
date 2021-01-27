@@ -10,6 +10,10 @@ import java.util.Arrays;
 Пример 1:
 
 Ввод: nums = [1,5,1,1,6,4]
+              1 1 1 4 5 6
+              1 6 1 5 5 4
+              1 6 1 5 1 4
+
 Выход: [1,6,1,5,1,4]
 Объяснение: [1,4,1,5,1,6] также принимается.
 Пример 2:
@@ -34,12 +38,13 @@ import java.util.Arrays;
 
 public class Wiggle_Sort_II {
     public static void main(String[] args) {
-        int[] num = {1,3,2,2,3,1};
+        int[] num = {1,5,1,1,6,4};
         System.out.print(Arrays.toString(wiggleSort(num)));
     }
     public static int[] wiggleSort(int[] nums) {
         Arrays.sort(nums); //сортируем массив
         System.out.println(Arrays.toString(nums));
+        System.out.println(nums.length+ "\n");
         int[] tmp = new int[nums.length]; // создаем новый на основе
         for(int i=0;i<nums.length;i++) {
             tmp[i] = nums[i];
