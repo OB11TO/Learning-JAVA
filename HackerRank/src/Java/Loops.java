@@ -2,7 +2,7 @@ package Java;
 
 import java.util.Scanner;
 
-
+//Task Loops
 // (a + 2^0 *b)
 // ((a + 2^0 *b + 2^1 *b)
 
@@ -15,6 +15,7 @@ public class Loops {
             int b = scanner.nextInt();   //b
             int n = scanner.nextInt();   // число расчетов
             int s0 = a;
+
             for(int j =0; j< n; j++){
                 s0 +=  (Math.pow(2,j) *b);
                 System.out.print(s0 + " ");
