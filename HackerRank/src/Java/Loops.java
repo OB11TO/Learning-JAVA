@@ -2,7 +2,7 @@ package Java;
 
 import java.util.Scanner;
 
-//Task Loops
+//Task Loops Haker
 // (a + 2^0 *b)
 // ((a + 2^0 *b + 2^1 *b)
 
@@ -11,7 +11,7 @@ public class Loops {
         Scanner scanner = new Scanner(System.in);
         int q = scanner.nextInt(); // количеств запросов
         for(int i = 0; i <q; i++){
-            int a = scanner.nextInt();  //а
+            int a = scanner.nextInt();  //а +
             int b = scanner.nextInt();   //b
             int n = scanner.nextInt();   // число расчетов
             int s0 = a;
