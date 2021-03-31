@@ -28,6 +28,7 @@ public class AndrewAndToxin {
                 min = reserv[i];
             }
         }
+        int[] mass = new int[l];
 
         for (int i = 0; i < n - 1; i++) { //упорядочный
             if (reserv[i] > reserv[i + 1]) {
@@ -35,20 +36,18 @@ public class AndrewAndToxin {
                 break;
             }
             else{
-                int[] mass = new int[l];
                 for(int j = 0; j < n; j++){
                     if(reserv[j] != max){
                         mass[j] = reserv[j];
                     }
-                    else {
-                        leet(min,max,mass);
+                    if(reserv[j] == max) {
                         break;
+                        //System.out.println("Stop");
                     }
-
                 }
             }
         }
-
+        leet(min,max,mass);
         //
 
       /*  for(int i = 1; i < n; i++){ //min max
@@ -81,5 +80,21 @@ public class AndrewAndToxin {
     }
     public static void leet(int min, int max, int[] mass){
         System.out.println(max + " " + min+ " "+ Arrays.toString(mass));
+        int s = max - min;
+        int k = 1;
+        int num = 0;
+
+        if((s % 2)!=0 ){
+            while(max > s){
+                for(int i = 0; i < mass.length; i++){
+                    mass[i] = mass[i] + k;
+                }
+                num++;
+                max--;
+            }
+        }else {
+
+        }
+        System.out.println(num);
     }
 }
