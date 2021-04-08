@@ -1,5 +1,8 @@
 package Java;
 
+/*
+  Task Static Block
+ */
 
 import java.util.Scanner;
 
