@@ -3,16 +3,15 @@ package Hotel.entity;
 public class Client {
     private String firstName;
     private String lastName;
-    private int number;
+    private String  number;
+    private Bill bill;
 
-    public Client(String firstName, String lastName, int number, Bill bill) {
+    public Client(String firstName, String lastName, String number, Bill bill) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.number = number;
         this.bill = bill;
     }
-
-    private  Bill bill;
 
     public String getFirstName() {
         return firstName;
@@ -30,11 +29,11 @@ public class Client {
         this.lastName = lastName;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
