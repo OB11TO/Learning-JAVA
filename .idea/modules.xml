@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaseTask/BaseTask.iml" filepath="$PROJECT_DIR$/BaseTask/BaseTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoursesTask/CoursesTask.iml" filepath="$PROJECT_DIR$/CoursesTask/CoursesTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerRank/HackerRank.iml" filepath="$PROJECT_DIR$/HackerRank/HackerRank.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerRank/HackerRank_Java.iml" filepath="$PROJECT_DIR$/HackerRank/HackerRank_Java.iml" />
