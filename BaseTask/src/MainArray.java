@@ -1,6 +1,6 @@
 /**
  *
- * Test for ArrayStorage
+ * Test for ArrayStorage  класс с методами реализации различных условий
  */
 public class MainArray {
     static ArrayStorage arrayStorage = new ArrayStorage();
