@@ -1,23 +1,37 @@
+import java.util.Objects;
+
 public class Test {
-    public void perform() {
-        this.perform(1);
-        System.out.print("1");
-    }
-    public void perform(int val) {
-        System.out.print(val);
-    }
     public static void main(String[] args) {
-        Test c = new SomeClass2();
-        c.perform(4);
+        BlackBox box1 = new BlackBox(4,5);
+        BlackBox box2 = new BlackBox(4,5);
+
+
+    System.out.println(box1.hashCode());
+    System.out.println(box2.hashCode());
+
+
     }
 }
-class SomeClass2 extends Test {
-    public void perform() {
-        super.perform();
-        System.out.print("3");
+class BlackBox {
+    int varA;
+    int varB;
+
+    BlackBox(int varA, int varB){
+        this.varA = varA;
+        this.varB = varB;
     }
-    public void perform(int val) {
-        super.perform();
-        System.out.print(val);
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BlackBox blackBox = (BlackBox) o;
+        return varA == blackBox.varA && varB == blackBox.varB;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(varA, varB);
     }
 }
+
