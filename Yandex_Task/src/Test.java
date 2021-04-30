@@ -36,21 +36,6 @@ class BlackBox {
         return varA == blackBox.varA && varB == blackBox.varB;
     }
 
-    @Override
-    public int hashCode() {
-        int result = 17;
 
-        result = 37 * result + ( booleanValue ? 1 : 0 );
-        result = 37 * result + (int) charValue;
-        result = 37 * result + (stringValue == null ? 0 : stringValue.hashCode());
-        result = 37 * result + (int)(longValue - (longValue >>> 32));
-        result = 37 * result + Float.floatToIntBits(floatValue);
-        long longBits = Double.doubleToLongBits(doubleValue);
-        result = 37 * result + (int)(longBits - (longBits >>> 32));
-        for( byte b : arrayValue )
-            result = 37 * result + (int) b;
-
-        return result;
-    }
 }
 
